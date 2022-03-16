@@ -1,6 +1,6 @@
 {
   "name": "@cocunat/react-light-calendar",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "🗓 A lightweight calendar for React (~3 kb)",
   "main": "dist/index.js",
   "files": [
@@ -20,7 +20,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lelivrescolaire/react-light-calendar.git"
+    "url": "git+https://github.com/cocunat/react-light-calendar.git"
+  },
+  "publishConfig": {
+    "@cocunat:registry": "https://npm.pkg.github.com/"
   },
   "keywords": [
     "react",
@@ -35,9 +38,9 @@
   "author": "Arnaud CETOUTE",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lelivrescolaire/react-light-calendar/issues"
+    "url": "https://github.com/cocunat/react-light-calendar/issues"
   },
-  "homepage": "https://github.com/lelivrescolaire/react-light-calendar#readme",
+  "homepage": "https://github.com/cocunat/react-light-calendar#readme",
   "dependencies": {
     "lodash.times": "4.3.2",
     "prop-types": "15.7.2",
