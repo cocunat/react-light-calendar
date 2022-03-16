@@ -1,5 +1,5 @@
 {
-  "name": "@lls/react-light-calendar",
+  "name": "@cocunat/react-light-calendar",
   "version": "2.2.0",
   "description": "🗓 A lightweight calendar for React (~3 kb)",
   "main": "dist/index.js",
