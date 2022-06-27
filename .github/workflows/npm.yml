@@ -22,7 +22,13 @@ jobs:
       contents: read
       packages: write
     steps:
+      - run: echo '//npm.pkg.github.com/:_authToken=${COCUNAT_GITHUB_TOKEN}' > .npmrc
       - run: echo '@cocunat:registry=https://npm.pkg.github.com' >> .npmrc
+      - run: echo '@cocunat:always-auth=true' >> .npmrc
       - uses: actions/checkout@v2
       - run: npm install
+      - run: npm install npm-cli-login
+      - run: node_modules/npm-cli-login/bin/npm-cli-login.js -u itcocunat -p ${{ secrets.COCUNAT_GITHUB_TOKEN }} -e it@cocunat.com -r https://npm.pkg.github.com
       - run: npm publish --registry=https://npm.pkg.github.com --scope=cocunat
+        env:
+          GITHUB_TOKEN: ${{ secrets.COCUNAT_GITHUB_TOKEN }}
