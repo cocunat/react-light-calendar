@@ -13,13 +13,11 @@ import './index.css'
 class Calendar extends Component {
   constructor (props) {
     super(props)
-    t.setTimezone(props.timezone)
     this.state = this.getInitialState(props)
   }
 
   componentDidUpdate = prevProps => {
     const { timezone, startDate, endDate } = this.props
-    if (timezone !== prevProps.timezone) t.setTimezone(timezone)
     if (startDate !== prevProps.startDate || endDate !== prevProps.endDate)
       this.setState(this.getInitialState(this.props))
   }

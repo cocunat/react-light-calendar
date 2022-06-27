@@ -1,6 +1,6 @@
 {
   "name": "@cocunat/react-light-calendar",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "🗓 A lightweight calendar for React (~3 kb)",
   "main": "dist/index.js",
   "files": [
